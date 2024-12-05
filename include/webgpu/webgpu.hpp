@@ -71,7 +71,7 @@
 namespace wgpu {
 
 struct DefaultFlag {};
-constexpr DefaultFlag Default;
+inline constexpr DefaultFlag Default;
 
 #define HANDLE(Type) \
 class Type { \
