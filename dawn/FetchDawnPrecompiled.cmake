@@ -90,7 +90,7 @@ message(STATUS "Fetching WebGPU implementation from '${URL}'")
 FetchContent_MakeAvailable(${FC_NAME})
 
 set(Dawn_ROOT "${${FC_NAME}_SOURCE_DIR}")
-set(Dawn_DIR "${${FC_NAME}_SOURCE_DIR}/lib64/cmake/Dawn")
+set(Dawn_DIR "${${FC_NAME}_SOURCE_DIR}/lib/cmake/Dawn")
 find_package(Dawn CONFIG REQUIRED)
 
 # Unify target name with other backends and provide webgpu.hpp
